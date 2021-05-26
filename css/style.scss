@@ -3,6 +3,11 @@
   font-weight: 500;
   line-height: 2em;
 }
+.title {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 0.88888;
+}
 
 /***********************************************************************/
 /**********               headerの全体設定                  *************/
@@ -234,3 +239,82 @@ header {
 /************************************************************************/
 /**************************      jumps      ******************************/
 /************************************************************************/
+.jumps {
+  padding: 106px 0 78px 0;
+}
+.jump {
+  display: flex;
+}
+.jump-image {
+  width: 1050px;
+  height: 545px;
+  object-fit: cover;
+}
+.jump:nth-of-type(2) {
+  margin-left: auto;
+  margin-right: 0;
+  justify-content: flex-end;
+  .jump-image {
+    order: 2;
+  }
+  .jump-read {
+    margin-right: 216px;
+  }
+}
+.jump:nth-of-type(n + 2) {
+  margin-top: 122px;
+}
+.jump:nth-of-type(odd) .jump-text {
+  margin-left: 137px;
+}
+.jump-title {
+  line-height: 1.72222;
+}
+.jump-read {
+  margin: 67px 0 73px 0;
+}
+.jump-button {
+  display: block;
+  width: 200px;
+  height: 56px;
+  border: 1px solid #70707070;
+  text-align: center;
+  line-height: 56px;
+  margin-top: 25px;
+}
+/********************end of jumps *********************************/
+
+/************************************************************************/
+/**************************      plans     ******************************/
+/************************************************************************/
+.plans {
+  background-image: url(../image/bg02@2x.png);
+  background-size: cover;
+  padding: 60px 0 142px 0;
+}
+.plan-logo {
+  text-align: center;
+  margin-bottom: 61px;
+  img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 13px;
+  }
+}
+.plan-detail {
+  display: flex;
+  justify-content: center;
+}
+.plan:nth-of-type(n + 2) {
+  margin-left: 94px;
+}
+.plan-image {
+  width: 331px;
+  height: 209px;
+  object-fit: cover;
+}
+.plan-text {
+  font-size: 20px;
+  line-height: 2em;
+  margin: 28px 0 30px 0;
+}
