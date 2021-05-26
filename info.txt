@@ -1,0 +1,37 @@
+font
+
+共通
+color #000
+.text 16 mid 2
+.title 36 Me
+
+-Toppan Bunkyu Midashi Mincho 32 Extrabold letterspa:180 1.5 
+
+-16 Extrabold 2.625(42) #ffffff
+-16 Extrabold 3(48) #ffffff
+
+-34 Extrabold 1.2353(42) #ffffff
+
+-28 Medium 1.5 #000000
+-16 Medium 1.375 #000000
+-22 Medium 1.4545455
+
+-36 Me 1.7222 #000
+-16 Me 2 #000
+
+-36 Me 0.88888 #000
+-20 Me 1.6 #000
+-16 Me 2 #000
+
+-36 Me 0.8888 #000
+-16 Me 2 #000
+-14 Me 2.2857 #000
+
+-36 Me 0.8888 #000
+-16 Extrabold 2 #000
+-16 Me 2 #000
+
+-18 Me 1.7777 #000
+-Toppan Bunkyu Midashi Mincho 32 180 1.5 
+-16 Me 3 #000
+-16 Me 180 3 #000

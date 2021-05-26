@@ -1,0 +1,276 @@
+@charset "UTF-8";
+.text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2em;
+}
+
+/***********************************************************************/
+/**********               headerの全体設定                  *************/
+/***********************************************************************/
+header {
+  /***************headerの全体設定***************/
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  z-index: 10;
+  /*********************************************/
+}
+
+header .header-inner {
+  /***************headerの中身設定***************/
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  max-width: 1920px;
+  margin: 0 auto;
+  /********** end of headerの中身設定   *********/
+  /***************headerのロゴ設定***************/
+  /*********************************************/
+  /****************hamburgerメニューの3本線*********************/
+  /****hamburgerメニューの3本線の設定******/
+  /**************************************/
+  /***************   end of hamburgerメニューの3本線    ******************/
+}
+
+header .header-inner .header-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .header-inner .header-logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+header .header-inner .header-logo p {
+  font-family: toppan-bunkyu-midashi-min-st, serif;
+  font-size: 3.2em;
+  line-height: 1.5;
+  letter-spacing: 0.18em;
+  color: #fff;
+  font-weight: 800;
+}
+
+header .header-inner #burger-btn {
+  display: none;
+  background-color: green;
+  z-index: 10;
+  position: relative;
+  width: 40px;
+  height: 30px;
+}
+
+header .header-inner #burger-btn .bar {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+header .header-inner #burger-btn .bar-top,
+header .header-inner #burger-btn .bar-mid {
+  margin-bottom: calc((30px - (3px * 3)) / 2);
+}
+
+header .header-inner .scroll .bar-top {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: translateY(calc((30px - 3px) / 2)) rotate(30deg);
+          transform: translateY(calc((30px - 3px) / 2)) rotate(30deg);
+}
+
+header .header-inner .scroll .bar-mid {
+  opacity: 0;
+}
+
+header .header-inner .scroll .bar-bot {
+  -webkit-transform: translateY(calc((-1) * (30px - 3px) / 2)) rotate(-30deg);
+          transform: translateY(calc((-1) * (30px - 3px) / 2)) rotate(-30deg);
+}
+
+header .header-inner #header-nav {
+  margin-left: 12em;
+}
+
+header .header-inner #header-nav .nav-list .nav-item {
+  display: inline-block;
+}
+
+header .header-inner #header-nav .nav-list .nav-item a {
+  color: #fff;
+  font-weight: 800;
+}
+
+header .header-inner #header-nav .nav-list .nav-item .text {
+  line-height: 2.625em;
+}
+
+header .header-inner #header-nav .nav-list .nav-item:nth-child(n + 2) {
+  margin-left: 33px;
+}
+
+header .header-inner .reserv {
+  height: 54px;
+  background-color: #978f10;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 37px;
+  margin: 0 0 0 auto;
+}
+
+header .header-inner .reserv img {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+}
+
+header .header-inner .reserv p {
+  line-height: 3em;
+  font-weight: 800;
+}
+
+/********************* ena of header  **********************************/
+/***********************************************************************/
+/************************************************************************/
+/**************************       Top      ******************************/
+/************************************************************************/
+.top {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.top .top-title {
+  -webkit-writing-mode: vertical-rl;
+          writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  color: #fff;
+  z-index: 5;
+  font-size: 34px;
+  line-height: 1.2353em;
+  position: absolute;
+  top: 32.9%;
+  right: 26.4583%;
+}
+
+.top .top-title p:nth-of-type(1) {
+  margin-left: 51px;
+}
+
+.top .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.top .swiper-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@-webkit-keyframes zoomUp {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+}
+
+@keyframes zoomUp {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+}
+
+.top .swiper-container .swiper-slide-active img,
+.top .swiper-container .swiper-slide-duplicate-active img,
+.top .swiper-container .swiper-slide-prev img {
+  -webkit-animation: zoomUp 10s linear 0s 1 normal both;
+          animation: zoomUp 10s linear 0s 1 normal both;
+}
+
+/********************end of top *********************************/
+/************************************************************************/
+/**************************      info      ******************************/
+/************************************************************************/
+.info {
+  background-image: url(../image/bg@2x.png);
+  background-size: cover;
+  width: 100%;
+  padding: 60px 0;
+}
+
+.info .info-inner {
+  width: 900px;
+  margin: 0 auto;
+  -webkit-writing-mode: vertical-rl;
+          writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  letter-spacing: 0.8em;
+}
+
+.info-title {
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+.info-title .space {
+  margin-top: 85px;
+  margin-right: 33px;
+}
+
+.info-read {
+  line-height: 1.375;
+  margin-top: 87px;
+  margin-left: 118px;
+}
+
+.info-read br {
+  display: block;
+  content: "";
+  padding: 11px;
+}
+
+.info-read:nth-of-type(1) {
+  margin-right: 118px;
+}
+
+.info-name {
+  font-size: 22px;
+  text-align: end;
+}
+
+/********************end of info *********************************/
+/************************************************************************/
+/**************************      jumps      ******************************/
+/************************************************************************/
+/*# sourceMappingURL=style.css.map */
