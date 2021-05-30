@@ -8,13 +8,23 @@
   font-weight: 500;
   line-height: 0.88888;
 }
+.logo {
+  text-align: center;
+  margin-bottom: 61px;
+  img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 13px;
+  }
+}
 
 /***********************************************************************/
 /**********               headerの全体設定                  *************/
 /***********************************************************************/
-header {
+#header {
+  transition: 0.5s;
   /***************headerの全体設定***************/
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(255, 255, 255, 0);
   width: 100%;
   height: 80px;
   position: fixed;
@@ -38,6 +48,11 @@ header {
         width: 40px;
         height: 40px;
         margin-right: 15px;
+        display: none;
+        z-index: 20;
+      }
+      .logo-active {
+        display: block;
       }
       p {
         font-family: toppan-bunkyu-midashi-min-st, serif;
@@ -48,6 +63,7 @@ header {
         font-weight: 800;
       }
     }
+
     /*********************************************/
 
     /****************hamburgerメニューの3本線*********************/
@@ -137,6 +153,44 @@ header {
 /********************* ena of header  **********************************/
 /***********************************************************************/
 
+/***********************************************************************/
+/**********                modalの設定                      *************/
+/***********************************************************************/
+.modal {
+  display: none;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 20;
+
+  .modal-bg {
+    background: rgba(255, 255, 255, 0.7);
+    height: 100vh;
+    width: 100%;
+  }
+  .modal-content{
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    padding: 100px;
+    
+    .modal-close{
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+/*********************  ena of modal    **********************************/
+/***********************************************************************/
+
+
 /************************************************************************/
 /**************************       Top      ******************************/
 /************************************************************************/
@@ -155,6 +209,7 @@ header {
     position: absolute;
     top: 32.9%;
     right: 26.4583%;
+    letter-spacing: 0.3em;
 
     p:nth-of-type(1) {
       margin-left: 51px;
@@ -282,6 +337,9 @@ header {
   line-height: 56px;
   margin-top: 25px;
 }
+.jump-text{
+  margin-top: 25px;
+}
 /********************end of jumps *********************************/
 
 /************************************************************************/
@@ -291,15 +349,6 @@ header {
   background-image: url(../image/bg02@2x.png);
   background-size: cover;
   padding: 60px 0 142px 0;
-}
-.plan-logo {
-  text-align: center;
-  margin-bottom: 61px;
-  img {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 13px;
-  }
 }
 .plan-detail {
   display: flex;
@@ -318,3 +367,193 @@ header {
   line-height: 2em;
   margin: 28px 0 30px 0;
 }
+/********************end of plans *********************************/
+
+/***********************************************************************/
+/**********                notice                          *************/
+/***********************************************************************/
+.notice {
+  padding: 60px 0;
+}
+.group {
+  .tab-group,
+  .panel-group {
+    display: flex;
+    margin: 0 auto;
+
+    .tab {
+      cursor: pointer;
+      line-height: 1em;
+    }
+
+    .panel {
+      width: 100%;
+      display: none;
+    }
+
+    .is-show {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .tab-group {
+    justify-content: center;
+    margin: 38px 0 47px 0;
+
+    .tab:nth-of-type(2) {
+      margin-left: 53px;
+    }
+  }
+  .card-box {
+    display: flex;
+    flex-direction: column-reverse;
+
+    .card:nth-of-type(n + 2) {
+      margin-bottom: 20px;
+    }
+  }
+  .card-box:nth-of-type(2) {
+    margin-left: 56px;
+  }
+  .card {
+    width: 570px;
+    height: 130px;
+    padding: 15px 10px;
+    display: flex;
+    background-color: #f6f6f6;
+  }
+  .panel-text {
+    text-align: left;
+    padding-right: 97px;
+
+    .date {
+      font-size: 14px;
+      line-height: 2.2857em;
+    }
+  }
+  .panel-img {
+    width: 103px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 30px;
+  }
+}
+.is-active {
+  border-bottom: 1px solid #707070;
+}
+/********************end of notice *********************************/
+
+/***********************************************************************/
+/**********                access                          *************/
+/***********************************************************************/
+.access {
+  padding: 60px 0 110px 0;
+  background-image: url(../image/bg@2x.png);
+  background-size: cover;
+}
+
+.access-info {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 69px;
+
+  img {
+    width: 656px;
+    height: 370px;
+    margin-right: 83px;
+  }
+}
+.access-read {
+  width: 497px;
+
+  p:nth-of-type(n + 2) {
+    margin-top: 3px;
+  }
+}
+.access-map {
+  width: 792px;
+  height: 592px;
+  margin: 0 auto;
+}
+.access-b {
+  font-weight: 800;
+}
+/********************end of access *********************************/
+
+/***********************************************************************/
+/**********                links                           *************/
+/***********************************************************************/
+.links {
+  background-image: url(../image/bg3@2x.png);
+  background-size: cover;
+  padding: 60px 0;
+  text-align: center;
+
+  .logo {
+    margin-bottom: 65px;
+  }
+
+  .title {
+    line-height: 1.5em;
+    letter-spacing: 0.18em;
+  }
+}
+.linkbox {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 93px;
+
+  .link {
+    display: inline-block;
+    writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    font-size: 18px;
+    line-height: 1.7777;
+    letter-spacing: 1em;
+  }
+  .link:nth-of-type(n + 2) {
+    margin-right: 20px;
+  }
+}
+.link-info {
+  display: flex;
+  justify-content: center;
+
+  .text {
+    line-height: 2em;
+  }
+}
+.link-info:nth-of-type(1) {
+  margin-bottom: 2px;
+
+  .link-info-second {
+    margin-left: 16px;
+    letter-spacing: 0.18em;
+  }
+}
+.link-info:nth-of-type(2) {
+  .link-info-second {
+    margin-left: 21px;
+  }
+}
+/********************end of links *********************************/
+
+/***********************************************************************/
+/**********                footer                          *************/
+/***********************************************************************/
+footer {
+  height: 60px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    color: #fff;
+    font-size: 12px;
+    line-height: 2em;
+  }
+}
+/********************end of footer *********************************/

@@ -9,7 +9,7 @@ let swipeOption = {
 }
 new Swiper('.swiper-container', swipeOption);
   
-  
+$(function(){
   
   /*******************          header          **********************/
   var headerTime = 500;
@@ -30,7 +30,7 @@ new Swiper('.swiper-container', swipeOption);
 
 
   /********  PCサイズの時にheader-navが見えるようにする **************/
-  $(window).on("load resize", function() {
+  // $(window).on("load resize", function() {
     // // ロードとリサイズ時の処理
     // var win = $(window).width();
     // if(win > 1021){
@@ -38,7 +38,7 @@ new Swiper('.swiper-container', swipeOption);
     // }else{
     //   $('#header-nav').hide();
     // }
-  });
+  // });
   /******** end of PCサイズの時にheader-navが見えるようにする ******/
   
   //headerのボタンを押したときにスクロール
@@ -51,4 +51,54 @@ new Swiper('.swiper-container', swipeOption);
     }, headerTime);
   });
   /*******************        end of header        *******************/
+
+  /***************** modal モーダル **********************/
+  // ウィンドウを開く
+  $('.reserv').on('click', function() {
+    $('.modal').fadeIn( 300 );
+      return false;
+    });
+
+  // ウィンドウを閉じる
+  $( '.modal-close' ).on( 'click', function() {
+    $( '.modal' ).fadeOut( 300 );
+      return false;
+  });
+  /*********************************************************/
+
+  /*****************       タブ       **********************/
+  $('.tab').click(function(){
+    // クリックした要素の先祖要素の中で、classの値がgroupの要素を取得
+    const group = $(this).parents('.group'); 
+    group.find('.is-active').removeClass('is-active');
+    $(this).addClass('is-active');
+    group.find('.is-show').removeClass('is-show');
+    // クリックしたタブからインデックス番号を取得
+    var index = $(this).index();
+    // クリックしたタブと同じインデックス番号をもつコンテンツを表示
+    group.find(".panel").eq(index).addClass('is-show');
+    });
+  /*********************************************************/
+
+
+
+  $(window).on('load scroll',function(){
+    var headh = $('#header').height();
+    if ($(this).scrollTop() < 1 ) {
+      $('#header').css('background','none');
+      $('.header-logo p,.nav-item a').css('color','#fff');
+      $('.img1').addClass('logo-active');
+      $('.img2').removeClass('logo-active');
+    } else {
+      $('#header').css('background','rgba(255, 255, 255, 1)');
+      $('.header-logo p,.nav-item a').css('color','black');
+      $('.img2').addClass('logo-active');
+      $('.img1').removeClass('logo-active');
+    }
+  });
+
+  AOS.init({
+    duration: 1000
+  });
+});
   
