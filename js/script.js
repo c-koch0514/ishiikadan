@@ -100,5 +100,12 @@ $(function(){
   AOS.init({
     duration: 1000
   });
+
+  const config = {
+    mode: "range",
+    minDate: "today",
+    dateFormat: "Y-m-d",
+  }
+  flatpickr('.modal-date', config);
 });
   
