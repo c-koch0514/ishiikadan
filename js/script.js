@@ -15,30 +15,31 @@ $(function(){
   var headerTime = 500;
   /*******************header-navの出現方法**********************/
   /*** 2.headerのburger 上下のスライド ***/
-  // $('#burger-btn').on('click',function(){
-  //   $('#header-nav').slideToggle(headerTime);
-  //   $(this).toggleClass('scroll');
-  // });
-  // /** 遷移したらheaderを閉じる **/
-  // $('.nav-item a').click(function(){
-  //   setTimeout(function(){
-  //     $('#burger-btn').toggleClass('scroll');
-  //   },headerTime);
-  //   $('#header-nav').delay(headerTime).slideToggle(headerTime);
-  // });
+  $('#burger-btn').on('click',function(){
+    $('#header-nav').slideToggle(headerTime);
+    $(this).toggleClass('scroll');
+  });
+  /** 遷移したらheaderを閉じる **/
+  $('.nav-item a').click(function(){
+    setTimeout(function(){
+      $('#burger-btn').toggleClass('scroll');
+    },headerTime);
+    $('#header-nav').delay(headerTime).slideToggle(headerTime);
+  });
   /*************end of header-navの出現方法**********************/
 
 
   /********  PCサイズの時にheader-navが見えるようにする **************/
-  // $(window).on("load resize", function() {
-    // // ロードとリサイズ時の処理
-    // var win = $(window).width();
-    // if(win > 1021){
-    //   $('#header-nav').show();
-    // }else{
-    //   $('#header-nav').hide();
-    // }
-  // });
+  $(window).on("load resize scroll", function() {
+    // ロードとリサイズ時の処理
+    var win = $(window).width();
+    if(win > 900){
+      $('#header-nav').show();
+    }else{
+      $('#header-nav').hide();
+      $('.nav-item a').css('color','#000');
+    }
+  });
   /******** end of PCサイズの時にheader-navが見えるようにする ******/
   
   //headerのボタンを押したときにスクロール
@@ -50,21 +51,26 @@ $(function(){
       'scrollTop': position 
     }, headerTime);
   });
- 
+  
+  $('#burger-btn').click(function(){
+    $('#burger-btn .bar').css('background-color','#000');
+    $('.nav-item a').css('color','#000');
+  });
   /*********************** headerの色変化 ******************* */
-  $(window).on('load scroll',function(){
-    var headh = $('.header').height();
+  $(window).on('load scroll resize',function(){
     if($('.header').length){
       if ($(this).scrollTop() < 1 ) {
         $('#header').css('background','none');
         $('.header-logo p,.nav-item a').css('color','#fff');
         $('.img1').addClass('logo-active');
         $('.img2').removeClass('logo-active');
+        $('#burger-btn .bar').css('background-color','#fff');
       } else {
         $('#header').css('background','rgba(255, 255, 255, 1)');
         $('.header-logo p,.nav-item a').css('color','black');
         $('.img2').addClass('logo-active');
         $('.img1').removeClass('logo-active');
+        $('#burger-btn .bar').css('background-color','black');
       }
     }
   });

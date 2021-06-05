@@ -1,0 +1,27 @@
+@media screen and (max-width: 1430px) {
+  .jump:nth-of-type(1) .jump-text {
+    margin-left: auto;
+    margin-right: 5vw;
+  }
+  .jump:nth-of-type(2) .jump-text {
+    margin-right: auto;
+    margin-left: 8vw;
+  }
+  .jump:nth-of-type(3) .jump-text {
+    margin-left: auto;
+    margin-right: 3vw;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .plans {
+    padding: 60px 50px 142px 50px;
+  }
+  .notice {
+    padding: 60px 50px;
+  }
+  .group .card {
+    width: 43.84615vw;
+  }
+}
+/*# sourceMappingURL=style_pc.css.map */

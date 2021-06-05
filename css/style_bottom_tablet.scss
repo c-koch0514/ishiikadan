@@ -1,0 +1,44 @@
+@media screen and (max-width: 1100px) {
+  .onsen-table {
+    width: 80vw;
+  }
+  .onsen-table tr{
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .bottom-box {
+    width: 100%;
+    height: calc(40vw + 331px);
+  }
+  .img-box {
+    img {
+      width: 70vw;
+      height: 40vw;
+    }
+  }
+  .bottom-text {
+    width: 75vw;
+    height: 381px;
+    padding: 90px 50px 30px 50px;
+    position: absolute;
+    top: calc(40vw - 50px);
+    right: 0;
+  }
+  .bottom-read {
+    margin: 30px 0;
+  }
+  .box2 {
+    .bottom-boxtitle,
+    .bottom-read {
+      padding-right: 0;
+    }
+  }
+  .br-1214 {
+    display: block;
+  }
+  .br-900 {
+    display: block;
+  }
+}
