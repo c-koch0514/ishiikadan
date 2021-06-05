@@ -50,6 +50,24 @@ $(function(){
       'scrollTop': position 
     }, headerTime);
   });
+ 
+  /*********************** headerの色変化 ******************* */
+  $(window).on('load scroll',function(){
+    var headh = $('.header').height();
+    if($('.header').length){
+      if ($(this).scrollTop() < 1 ) {
+        $('#header').css('background','none');
+        $('.header-logo p,.nav-item a').css('color','#fff');
+        $('.img1').addClass('logo-active');
+        $('.img2').removeClass('logo-active');
+      } else {
+        $('#header').css('background','rgba(255, 255, 255, 1)');
+        $('.header-logo p,.nav-item a').css('color','black');
+        $('.img2').addClass('logo-active');
+        $('.img1').removeClass('logo-active');
+      }
+    }
+  });
   /*******************        end of header        *******************/
 
   /***************** modal モーダル **********************/
@@ -82,20 +100,6 @@ $(function(){
 
 
 
-  $(window).on('load scroll',function(){
-    var headh = $('#header').height();
-    if ($(this).scrollTop() < 1 ) {
-      $('#header').css('background','none');
-      $('.header-logo p,.nav-item a').css('color','#fff');
-      $('.img1').addClass('logo-active');
-      $('.img2').removeClass('logo-active');
-    } else {
-      $('#header').css('background','rgba(255, 255, 255, 1)');
-      $('.header-logo p,.nav-item a').css('color','black');
-      $('.img2').addClass('logo-active');
-      $('.img1').removeClass('logo-active');
-    }
-  });
 
   AOS.init({
     duration: 1000

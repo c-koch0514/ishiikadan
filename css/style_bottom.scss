@@ -1,0 +1,140 @@
+/******************************header*********************************/
+#header {
+  background-color: #ffffff;
+
+  .header-inner {
+    .header-logo {
+      p {
+        color: #000;
+      }
+    }
+
+    #header-nav .nav-list .nav-item a {
+      color: #000;
+    }
+  }
+}
+
+main{
+  padding-top: 80px;
+}
+
+/******************************bottom-top*********************************/
+.bottom-top {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+
+  p {
+    font-size: 34px;
+    line-height: 1.2353em;
+    color: #fff;
+  }
+}
+
+/******************************bottom-contents*********************************/
+.bottom-contents {
+  width: 1180px;
+  margin: 0 auto;
+  padding: 33px 0 150px 0;
+}
+.bottom-nav {
+  display: flex;
+}
+.bottom-title {
+  text-align: center;
+  margin: 93px 0 76px 0;
+}
+
+.bottom-box {
+  position: relative;
+  height: 438px;
+}
+img {
+  width: 525px;
+  height: 300px;
+  object-fit: cover;
+  z-index: 5;
+}
+.bottom-text {
+  width: 813px;
+  height: 381px;
+  z-index: -10;
+  background-image: url(../image/bg@2x.png);
+  background-size: cover;
+  padding: 55px 0 0 239px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.box2 {
+  .bottom-text {
+    padding-left: 60px;
+  }
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .bottom-text {
+    left: 0;
+    right: auto;
+  }
+}
+.bottom-boxtitle {
+  font-size: 24px;
+}
+.bottom-notice {
+  font-size: 14px;
+  line-height: 1.5em;
+}
+.bottom-box:nth-of-type(n + 2) {
+  margin-top: 84px;
+}
+.bottom-read{
+  margin: 46px 0;
+}
+
+/******************************onsen-box*********************************/
+.onsen-contents{
+  padding-bottom: 96.5px;
+}
+.onsen-box{
+  margin-top: 156.5px;
+  padding: 90.5px 150px 74px 150px;
+  // background-color: aquamarine;
+  border-top: 1px solid #E7E7E7;
+  border-bottom: 1px solid #E7E7E7;
+}
+.onsen-title{
+  font-size: 26px;
+  line-height: 1.231em;
+  text-align: center;
+}
+.onsen-table{
+  margin-top: 47.5px;
+  
+  tr{
+    display: block;
+    padding: 14.5px 0 15.5px 0;
+    border-top: 1px solid #E7E7E7;
+  }
+  tr:nth-of-type(3){
+    border-bottom: 1px solid #E7E7E7;
+  }
+  td{
+    font-size: 15px;
+    // line-height: 2.1333em;
+    line-height: 1.46667em;
+  }
+}
+.onsentable-title{
+  width: 220px;
+}
+.onsentable-read{
+  padding-right: 62px;
+}
