@@ -33,6 +33,8 @@
   width: 100%;
   height: 80px;
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 10;
   /*********************************************/
 }
@@ -47,6 +49,7 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 0 20px;
+  width: 100%;
   max-width: 1920px;
   margin: 0 auto;
   /********** end of headerの中身設定   *********/
@@ -78,8 +81,8 @@
 
 #header .header-inner .header-logo p {
   font-family: toppan-bunkyu-midashi-min-st, serif;
-  font-size: 3.2em;
-  line-height: 1.5;
+  font-size: 32px;
+  line-height: 1.5em;
   letter-spacing: 0.18em;
   color: #fff;
   font-weight: 800;
@@ -275,6 +278,7 @@
 /************************************************************************/
 .top {
   height: 100vh;
+  width: 100%;
   overflow: hidden;
   position: relative;
 }

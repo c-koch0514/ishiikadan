@@ -1,0 +1,118 @@
+@media screen and (max-width: 730px) {
+  .info .info-inner {
+    writing-mode: horizontal-tb;
+    -ms-writing-mode: lr-tb;
+    letter-spacing: 0.4em;
+  }
+
+  .info-title {
+    font-size: 28px;
+    margin-left: 0;
+
+    .space {
+      margin-top: 20px;
+      margin-right: 0;
+    }
+  }
+  .info-read {
+    margin-left: 10vw;
+    margin-top: 50px;
+
+    br {
+      padding: 5px;
+    }
+  }
+  .info-name {
+    margin-top: 50px;
+  }
+
+  .access-info {
+    flex-direction: column; //
+
+    img {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+  .access-read {
+    padding: 50px 20px 0 20px;
+    width: 100%;
+
+    p:nth-of-type(n + 2) {
+      margin-top: 3px;
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .jump {
+    position: relative;
+  }
+  .jump-image {
+    height: 800px;
+    filter: brightness(50%);
+  }
+  .jump-text {
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    position: absolute;
+    top: 160px;
+  }
+  .jump-button {
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border: 1px solid #fff;
+  }
+  .br-570 {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /***********************************************************************/
+  /**********               headerの全体設定                  *************/
+  /***********************************************************************/
+  #header {
+    height: 50px;
+
+    .header-inner {
+      /***************headerのロゴ設定***************/
+      .header-logo {
+        align-items: center;
+        img {
+          width: 25px;
+          height: 25px;
+          margin-right: 10px;
+        }
+        p {
+          font-size: 24px;
+          letter-spacing: 0.18em;
+        }
+      }
+      #burger-btn {
+        margin-left: 10px;
+      }
+
+      .reserv {
+        height: 33.75px;
+        padding: 0 23.125px;
+
+        img {
+          width: 13.75px;
+          height: 13.75px;
+          margin-right: 10px;
+        }
+        p {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  /********************* ena of header  **********************************/
+
+
+  .bottom-main {
+    padding-top: 50px;
+  }
+  
+}

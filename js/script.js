@@ -8,7 +8,7 @@ let swipeOption = {
   speed: 1000,
 }
 new Swiper('.swiper-container', swipeOption);
-  
+
 $(function(){
   
   /*******************          header          **********************/
@@ -18,6 +18,20 @@ $(function(){
   $('#burger-btn').on('click',function(){
     $('#header-nav').slideToggle(headerTime);
     $(this).toggleClass('scroll');
+    $('.nav-item a').css('color','#000');
+    if($(this).hasClass('btn-index')){
+      if($(this).hasClass('scroll')){
+        $('#burger-btn .bar').css('background-color','#000');
+      }else{
+        if ($(window).scrollTop() < 1 ) {
+          $('#burger-btn .bar').css('background-color','#fff');
+        }else{
+          $('#burger-btn .bar').css('background-color','#000');
+        }
+      }
+    }else{
+      
+    }
   });
   /** 遷移したらheaderを閉じる **/
   $('.nav-item a').click(function(){
@@ -52,10 +66,9 @@ $(function(){
     }, headerTime);
   });
   
-  $('#burger-btn').click(function(){
-    $('#burger-btn .bar').css('background-color','#000');
-    $('.nav-item a').css('color','#000');
-  });
+  // $('#burger-btn').click(function(){
+  //   $('#burger-btn .bar').css('background-color','#000');
+  // });
   /*********************** headerの色変化 ******************* */
   $(window).on('load scroll resize',function(){
     if($('.header').length){
