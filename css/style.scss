@@ -213,7 +213,8 @@
 .modal-form {
   display: flex;
   flex-direction: column;
-  width: 430px;
+  width: 75.44vw;
+  max-width: 430px;
 
   label {
     font-size: 16px;
@@ -323,7 +324,7 @@
 }
 
 .info-read {
-  line-height: 1.375;
+  line-height: 1.375em;
   margin-top: 87px;
   margin-left: 118px;
 

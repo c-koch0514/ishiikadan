@@ -246,7 +246,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 430px;
+  width: 75.44vw;
+  max-width: 430px;
 }
 
 .modal-form label {
@@ -373,7 +374,7 @@
 }
 
 .info-read {
-  line-height: 1.375;
+  line-height: 1.375em;
   margin-top: 87px;
   margin-left: 118px;
 }

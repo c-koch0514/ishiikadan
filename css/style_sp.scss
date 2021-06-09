@@ -19,7 +19,7 @@
     margin-top: 50px;
 
     br {
-      padding: 5px;
+      padding: 0;
     }
   }
   .info-name {
@@ -42,21 +42,48 @@
       margin-top: 3px;
     }
   }
+
+  .br-730 {
+    display: none;
+  }
 }
 
+@media screen and (max-width: 595px) {
+  .bottom-text {
+    height: fit-content;
+    padding: 90px 30px 40px 30px;
+  }
+  .box2 .bottom-text {
+    padding-left: 30px;
+  }
+  .bottom-read {
+    margin-bottom: 15px;
+  }
+}
+
+$jump-hei: 600px;
 @media screen and (max-width: 570px) {
-  .jump {
+  .modal .modal-content {
+    padding: 25px 30px 30px 30px;
+  }
+
+  .jump:nth-of-type(n) {
     position: relative;
+    .jump-text {
+      color: #fff;
+      text-shadow: 1px 1px 1px #000;
+      position: absolute;
+      top: 0;
+      padding: 0 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: #{$jump-hei};
+    }
   }
   .jump-image {
-    height: 800px;
+    height: #{$jump-hei};
     filter: brightness(50%);
-  }
-  .jump-text {
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    position: absolute;
-    top: 160px;
   }
   .jump-button {
     color: #fff;
@@ -65,6 +92,16 @@
   }
   .br-570 {
     display: block;
+  }
+  .info-read .br-570-none {
+    display: none;
+  }
+
+  .notice {
+    padding: 60px 30px;
+  }
+  .pane-read {
+    line-height: 1.5em;
   }
 }
 
@@ -109,10 +146,63 @@
     }
   }
   /********************* ena of header  **********************************/
+  .plans {
+    padding: 60px 30px 142px 30px;
+  }
 
+  .info-read {
+    margin-top: 30px;
+  }
 
   .bottom-main {
     padding-top: 50px;
+
+    .text {
+      line-height: 1.5em;
+    }
   }
-  
+  .br-500-none {
+    display: none;
+  }
+  .bottom-contents {
+    padding: 33px 30px 150px 30px;
+  }
+
+  .img-box {
+    img {
+      width: 100%;
+      height: 40vw;
+    }
+  }
+  .bottom-text {
+    width: 100%;
+    padding: 90px 30px 30px 30px;
+  }
+  .bottom-read {
+    margin: 30px 0 0 0;
+  }
+  .onsen-contents {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 403px) {
+  .info-title .space {
+    margin-top: 0;
+  }
+  .br-400-none {
+    display: none;
+  }
+  .jump-read {
+    margin: 30px 0 30px 0;
+  }
+  .br-400 {
+    display: block;
+  }
+  .bottom-text {
+    padding: 90px 25px 30px 25px;
+  }
+  .box2 .bottom-text {
+    padding-left: 25px;
+  }
 }
