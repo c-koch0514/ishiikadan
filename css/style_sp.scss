@@ -27,7 +27,7 @@
   }
 
   .access-info {
-    flex-direction: column; 
+    flex-direction: column;
 
     img {
       width: 100%;
@@ -102,6 +102,41 @@ $jump-hei: 600px;
   }
   .pane-read {
     line-height: 1.5em;
+  }
+  .group {
+    .card {
+      height: 130px;
+      padding: 0;
+      display: block;
+      position: relative;
+      background-color: #fff;
+    }
+    .panel-text {
+      color: #fff;
+      padding-right: 10px;
+      padding-left: 10px;
+      position: absolute;
+      top: 15px;
+      text-shadow: 1px 1px 1px #000;
+    }
+    .panel-img {
+      width: 100%;
+      height: 100%;
+      margin-right: 0;
+      filter: opacity(0.85);
+    }
+
+    .card:hover {
+      .panel-img {
+        filter: opacity(1);
+      }
+    }
+  }
+
+  .access-map {
+    width: 89.919vw;
+    max-width: 892px;
+    height: 100vw;
   }
 }
 

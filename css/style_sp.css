@@ -105,6 +105,37 @@
   .pane-read {
     line-height: 1.5em;
   }
+  .group .card {
+    height: 130px;
+    padding: 0;
+    display: block;
+    position: relative;
+    background-color: #fff;
+  }
+  .group .panel-text {
+    color: #fff;
+    padding-right: 10px;
+    padding-left: 10px;
+    position: absolute;
+    top: 15px;
+    text-shadow: 1px 1px 1px #000;
+  }
+  .group .panel-img {
+    width: 100%;
+    height: 100%;
+    margin-right: 0;
+    -webkit-filter: opacity(0.85);
+            filter: opacity(0.85);
+  }
+  .group .card:hover .panel-img {
+    -webkit-filter: opacity(1);
+            filter: opacity(1);
+  }
+  .access-map {
+    width: 89.919vw;
+    max-width: 892px;
+    height: 100vw;
+  }
 }
 
 @media screen and (max-width: 500px) {
