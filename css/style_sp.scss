@@ -27,7 +27,7 @@
   }
 
   .access-info {
-    flex-direction: column; //
+    flex-direction: column; 
 
     img {
       width: 100%;
@@ -50,7 +50,7 @@
 
 @media screen and (max-width: 595px) {
   .bottom-text {
-    height: fit-content;
+    height: auto;
     padding: 90px 30px 40px 30px;
   }
   .box2 .bottom-text {

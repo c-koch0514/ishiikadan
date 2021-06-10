@@ -48,9 +48,7 @@
 
 @media screen and (max-width: 595px) {
   .bottom-text {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: auto;
     padding: 90px 30px 40px 30px;
   }
   .box2 .bottom-text {
