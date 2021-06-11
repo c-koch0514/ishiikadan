@@ -299,7 +299,8 @@
 /**************************      info      ******************************/
 /************************************************************************/
 .info {
-  background-image: url(../image/bg@2x.png);
+  // background-image: url(../image/bg@2x.png);
+  background-image: url(../image/bg.png);
   background-size: cover;
   width: 100%;
   padding: 60px 50px;
@@ -511,9 +512,11 @@
 /***********************************************************************/
 .access {
   padding: 60px 0 110px 0;
-  background-image: url(../image/bg@2x.png);
+  // background-image: url(../image/bg@2x.png);
+  background-image: url(../image/bg.png);
   background-size: cover;
   width: 100%;
+  height: auto;
 }
 
 .access-info {
