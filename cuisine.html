@@ -9,7 +9,7 @@
 
   <title>お料理 - 石井花壇 | 温海温泉旅館【公式サイト】</title>
 
-  <link rel="icon" href="./image/favicon.ico">
+  <link rel="icon" href="./img/favicon.ico">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
@@ -18,7 +18,6 @@
   <link rel="stylesheet" href="css/custom_reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="./css/style_bottom.css">
-  <link rel="stylesheet" href="./css/style_bottom_pc.css">
   <link rel="stylesheet" href="./css/style_tablet.css">
   <link rel="stylesheet" href="./css/style_bottom_tablet.css">
   <link rel="stylesheet" href="./css/style_sp.css">
@@ -35,7 +34,7 @@
       <!-- header-logo -->
       <a href="./index.html">
         <div class="header-logo">
-          <img src="./image/logo02@2x.png" alt="ロゴです" class="img2 logo-active">
+          <img src="./img/logo02@2x-min.png" alt="ロゴです" class="img2 logo-active">
           <p>石井花壇</p>
         </div>
       </a>
@@ -50,7 +49,7 @@
       </nav>
 
       <button class="reserv">
-        <img src="./image/calender@2x.png" alt="カレンダーのアイコン">
+        <img src="./img/calender@2x-min.png" alt="カレンダーのアイコン">
         <p class="text">宿泊予約</p>
       </button><!-- /.reserv -->
 
@@ -80,8 +79,8 @@
           <option value="">【期間限定】熱海蟹をたっぷりと愉しむプラン。</option>
           <option value="">【平日限定】贅沢美味懐石プラン。海辺の四季旬彩プラン。</option>
         </select><!-- /# -->
-        <label for="madal-date">日時指定</label>
-        <input type="text" id="madal-date" class="modal-date" placeholder="日時を選択してください">
+        <label for="modal-date">日時指定</label>
+        <input type="text" id="modal-date" class="modal-date" placeholder="日時を選択してください">
         <button class="modal-button">送信する</button>
       </form><!-- /.modal-form -->
       <button class="modal-close">×</button>
@@ -92,7 +91,7 @@
 
   <main class="bottom-main">
     <!-----------------------  bottom-top  ------------------------>
-    <div class="bottom-top" style="background-image: url(./image/menu-header.png);">
+    <div class="bottom-top" style="background-image: url(./img/menu-header-min.png);">
       <p>お料理</p>
     </div><!-- /.bottom-top -->
     <!-----------------------  end of bottom-top  ------------------------>
@@ -114,7 +113,7 @@
 
       <div class="bottom-box">
         <div class="img-box">
-          <img src="./image/menu01.jpg" alt="会席料理のイメージ写真" data-aos="fade-up">
+          <img src="./img/menu01-min.jpg" alt="会席料理のイメージ写真" data-aos="fade-up">
         </div>
         <div class="bottom-text" data-aos="fade-up">
           <p class="bottom-boxtitle">地元食材にこだわった会席料理</p><!-- /.bottom-text -->
@@ -127,7 +126,7 @@
 
       <div class="bottom-box box2">
         <div class="img-box">
-          <img src="./image/menu02.jpg" alt="魚介のイメージ写真" data-aos="fade-up">
+          <img src="./img/menu02-min.jpg" alt="魚介のイメージ写真" data-aos="fade-up">
         </div>
         <div class="bottom-text" data-aos="fade-up">
           <p class="bottom-boxtitle">熱海の漁港で目利きの品を</p><!-- /.bottom-text -->
@@ -140,7 +139,7 @@
 
       <div class="bottom-box">
         <div class="img-box">
-          <img src="./image/menu03.jpg" alt="職人のイメージ写真" data-aos="fade-up">
+          <img src="./img/menu03-min.jpg" alt="職人のイメージ写真" data-aos="fade-up">
         </div>
         <div class="bottom-text" data-aos="fade-up">
           <p class="bottom-boxtitle">食材が一流、職人も一流</p><!-- /.bottom-text -->
@@ -163,7 +162,7 @@
       </div><!-- /.linkbox -->
 
       <div class="logo" data-aos="fade-up">
-        <img src="./image/logo02@2x.png" alt="ロゴ黒">
+        <img src="./img/logo02@2x-min.png" alt="ロゴ黒">
         <p class="title">石井花壇</p><!-- /.title -->
       </div><!-- /.plan-logo -->
 
@@ -191,7 +190,23 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
   <script src="./js/script.js" defer></script>
-  <script src="./js/pan.js"></script>
+  <script type="application/ld+json">
+    [{
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "トップ",
+        "item": "http://ckoch.html.xdomain.jp/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "お料理",
+        "item": "http://ckoch.html.xdomain.jp/cuisine.html"
+      }]
+    }]
+    </script>
 </body>
 
 </html>

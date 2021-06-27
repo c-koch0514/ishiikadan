@@ -101,6 +101,41 @@ $(function(){
     $( '.modal' ).fadeOut( 300 );
       return false;
   });
+
+  //  フォームを全て埋めないと送信できないようにする
+  $(".modal-form").submit(function(){
+    var name = $('#modal-name').val();
+    var email = $('#modal-email').val();
+    var plan = $('#modal-plan').val();
+    var date = $('#modal-date').val();
+
+    if(name == ''){
+      $('#modal-name').css('border-color','red');
+    }else{
+      $('#modal-name').css('border-color','#e7e7e7');
+    }
+    if(email == ''){
+      $('#modal-email').css('border-color','red');
+    }else{
+      $('#modal-email').css('border-color','#e7e7e7');
+    }
+    if(plan == 'プランを選択してください'){
+      $('#modal-plan').css('border-color','red');
+    }else{
+      $('#modal-plan').css('border-color','#e7e7e7');
+    }
+    if(date == ''){
+      $('#modal-date').css('border-color','red');
+    }else{
+      $('#modal-date').css('border-color','#e7e7e7');
+    }
+
+    if(name == '' || email == '' ||  plan == 'プランを選択してください' || date == ''){
+      return false;
+    }
+
+  });
+  
   /*********************************************************/
 
   /*****************       タブ       **********************/
