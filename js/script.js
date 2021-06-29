@@ -2,7 +2,7 @@ let swipeOption = {
   loop: true,
   effect: 'fade',
   autoplay: {
-    delay: 8000,
+    delay: 8500,
     disableOnInteraction: false,
   },
   speed: 1000,
@@ -66,9 +66,7 @@ $(function(){
     }, headerTime);
   });
   
-  // $('#burger-btn').click(function(){
-  //   $('#burger-btn .bar').css('background-color','#000');
-  // });
+
   /*********************** headerの色変化 ******************* */
   $(window).on('load scroll resize',function(){
     if($('.header').length){

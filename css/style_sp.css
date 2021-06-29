@@ -41,7 +41,8 @@
   .access-read p:nth-of-type(n + 2) {
     margin-top: 3px;
   }
-  .br-730, .br-730-none {
+  .br-730,
+  .br-730-none {
     display: none;
   }
 }
@@ -175,7 +176,7 @@
     margin-right: 10px;
   }
   #header .header-inner .reserv p {
-    font-size: 10px;
+    font-size: 12px;
   }
   /********************* ena of header  **********************************/
   .plans {
